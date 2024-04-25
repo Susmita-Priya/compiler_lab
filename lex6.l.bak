@@ -1,0 +1,17 @@
+%Susmita Rani Saha B180305047
+%{
+	#include<stdio.h>
+	int to=0;
+%}
+%%
+("[bB][uU][tT]")|"and"|"AND"|"or"|"OR" { printf("\n %s is to be verb\n",yytext);}
+%%
+int main()
+{
+        yylex();		
+	return 0;
+}
+int yywrap(){
+return 1;
+}
+
